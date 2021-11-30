@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Album/Song Review</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Album/Song Review</h2>
+        <hr>
+        <form>
+            <input type="hidden" name="am" id="am" value="p21181">
+            <table class="main_table">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label for="my_button">If you don't have any song for review you can get an idea</label></td>
+                                <td><input type="button" id="my_button" name="my_button" value="Here" class="my_button"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>User Info</legend>
+                            <table>
+                                <tr>
+                                    <td><label for="Name">Name: </label></td>
+                                    <td><input type="text" id="Name" name="Name" placeholder="Δημήτρης Φουσέκης" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Email">Email: </label></td>
+                                    <td><input type="email" id="Email" name="Email" placeholder="dimitris.fousekis.159@gmail.com" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Password">Password: </label></td>
+                                    <td><input type="password" id="Password" name="Password" size="8" maxlength="8" minlength="6" placeholder="12345678" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="UserPhone">Phone Number:</label></td>
+                                    <td><input type="tel" id="UserPhone" name="UserPhone" size="10" maxlength="10"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="date_of_birth">Date of Birth:</label></td>
+                                    <td><input type="date" id="date_of_birth" name="date_of_birth" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="IsUser">Already a user: <label></td>
+                                    <td><input type="checkbox" name="IsUser" id="IsUser"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Song Info</legend>
+                            <table>
+                                <tr>
+                                    <td><label for="CreatorName">Creator: </label></td>
+                                    <td><input type="search" id="CreatorName" name="CreatorName" placeholder="FLY LO" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="SongName">Album/Song Name: </label></td>
+                                    <td><input type="text" id="SongName" name="SongName" placeholder="Trap Life" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="song_number">Number of songs(album only):</label></td>
+                                    <td><input type="number" id="song_number" name="song_number"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="SongLink">Album/Song link: </label></td>
+                                    <td><input type="url" id="SongLink" name="SongLink"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="choice">Type:</label></td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>Album</td>
+                                                <td>Song</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="radio" name="choice"  id="choice" value="p1"></td>
+                                                <td><input type="radio" name="choice"  id="choice" value="p2" checked></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="language">Language</label></td>
+                                    <td>
+                                        <select id="language" name="language">
+                                            <option>English</option>
+                                            <option>German</option>
+                                            <option>French</option>
+                                            <option>Italian</option>
+                                            <option>Spain</option>
+                                            <option>Greek</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="track">A file of the Song:</label></td>
+                                    <td><input type="file" id="track" name="track"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="opinion">Write us your opinion<br>about this album/song:</label></td>
+                                    <td><textarea id="opinion" name="opinion" rows="3" placeholder="Περνάνε μήνες, τα κιλά πετάνε σαν να ήταν χήνες."></textarea>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Release Date</legend>
+                            <table>
+                                <tr><div class="inside-header">Enter the release date through the UI:</div></tr>
+                                <tr>
+                                    <td><label for="release_date">Album's/Song's Release<br>Date and Time:</label></td>
+                                    <td><input type="datetime-local" id="release_date" name="release_date"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><div class="inside-header">Or just type it:</div></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Date">Date and time:</label></td>
+                                    <td><input type="datetime" id="Date" name="Date"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><div class="inside-header">Or you can type date and time one by one:</div></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Day">Day of the week(Mon-Sun):</label></td>
+                                    <td><input type="text" id="Day" name="Day"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Week">Week:</label></td>
+                                    <td><input type="week" id="Week" name="Week"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Month">Month:</label></td>
+                                    <td><input type="month" id="Month" name="Month"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Year">Year:</label></td>
+                                    <td><input type="number" size="4" maxlength="4" max="2021"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="Time">Time of the day:</label></td>
+                                    <td><input type="time" id="Time" name="Time"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <table>
+                                <tr>
+                                    <td><label for="slide">How sure are you about this info: </label></td>
+                                    <td><input type="range" id="slide" name="slide"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="terms">
+                                            I agree with UniPi's <a href="#">terms and conditions</a>:
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="terms" name="terms">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-buttons">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                        <input type="image" src="pngegg.png" alt="submit" width="48" height="48">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subext">
+                        <div class="subtext">Examples provided</div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+    </div>
+</body>
+</html>

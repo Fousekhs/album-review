@@ -1,1 +1,1 @@
-# album-review
+Git repository for a university assgnment for the lesson of web technologies

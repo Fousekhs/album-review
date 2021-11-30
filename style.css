@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid lightskyblue;
+    background-color: aliceblue;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container>h2 {
+    text-align: center;
+}
+
+fieldset>table {
+    margin: 0 auto;
+}
+
+.main_table {
+    margin: 0 auto;
+}
+
+.container hr {
+    height: 4px;
+    background-color: lightskyblue;
+}
+
+.container input {
+    background-color: aliceblue;
+}
+
+.container textarea {
+    background-color: aliceblue;
+}
+
+.container fieldset {
+    border: 2px solid lightskyblue;
+}
+
+.form-buttons {
+    text-align: end;
+}
+
+.form-buttons input {
+    border-radius: 10px;
+}
+
+.my_button {
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.search-button {
+    background-color: aliceblue;
+}
+
+.subtext {
+    font-weight: 100;
+    font-style: italic;
+    text-align: start;
+    font-size: 15px;
+}
+
+.inside-header {
+    font-weight: bold;
+    text-align: center;
+}
