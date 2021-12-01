@@ -68,3 +68,9 @@ fieldset>table {
     font-weight: bold;
     text-align: center;
 }
+
+.note {
+    color: lightslategray;
+    font-weight: lighter;
+    font-style: italic;
+}

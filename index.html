@@ -16,8 +16,8 @@
                     <td>
                         <table>
                             <tr>
-                                <td><label for="my_button">If you don't have any song for review you can get an idea</label></td>
-                                <td><input type="button" id="my_button" name="my_button" value="Here" class="my_button"></td>
+                                <td><label for="my_button">If you don't have any idea for review you can get one</label></td>
+                                <td><a href="https://fousekhs.github.io/Drake/albums/albums.html"><input type="button" id="my_button" name="my_button" value="Here" class="my_button"></a></td>
                             </tr>
                         </table>
                     </td>
@@ -51,6 +51,14 @@
                                     <td><label for="IsUser">Already a user: <label></td>
                                     <td><input type="checkbox" name="IsUser" id="IsUser"></td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <label for="fav-colour">Your favourite colour:</label>
+                                    </td>
+                                    <td>
+                                        <input type="color" id="fav-colour" name="fav-colour" value="#87CEFA">
+                                    </td>
+                                </tr>
                             </table>
                         </fieldset>
                     </td>
@@ -61,8 +69,22 @@
                             <legend>Song Info</legend>
                             <table>
                                 <tr>
+                                    <td>
+                                        <label for="search">Search for songs:</label>
+                                    </td>
+                                    <td>
+                                        <input type="search" name="search" id="search">
+                                        <input type="button" name="search_button" class="my_button" value="Search">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="note"> If the song is found  it's info will be submitted automatically.</div>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td><label for="CreatorName">Creator: </label></td>
-                                    <td><input type="search" id="CreatorName" name="CreatorName" placeholder="FLY LO" required></td>
+                                    <td><input type="text" id="CreatorName" name="CreatorName" placeholder="FLY LO" required></td>
                                 </tr>
                                 <tr>
                                     <td><label for="SongName">Album/Song Name: </label></td>
